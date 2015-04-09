@@ -1,0 +1,10 @@
+source https://www.nuget.org/api/v2
+source http://nuget.prod.justgiving.service/artifactory/api/nuget/int-nuget
+
+nuget Microsoft.Data.Edm 5.6.2
+nuget Microsoft.Data.OData 5.6.2
+nuget Microsoft.Data.Services.Client 5.6.2
+nuget Microsoft.WindowsAzure.ConfigurationManager 2.0.3
+nuget Newtonsoft.Json 5.0.8
+nuget System.Spatial 5.6.2
+nuget WindowsAzure.Storage 4.3.0
