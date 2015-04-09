@@ -1,0 +1,7 @@
+*.suo
+[Bb]in
+[Dd]ebug*/
+[Oo]bj
+packages/
+.paket/paket.exe
+
