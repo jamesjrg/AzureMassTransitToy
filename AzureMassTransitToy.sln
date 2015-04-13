@@ -7,6 +7,10 @@ Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "AzureMassTransitToy", "Azur
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Producer", "Producer\Producer.fsproj", "{64AF1B98-696F-4F85-AC92-43F672A06DAD}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ConsumerA", "ConsumerA\ConsumerA.fsproj", "{38758480-5F52-464F-A6E4-4FA1C7DCE137}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ConsumerB", "ConsumerB\ConsumerB.fsproj", "{79640D24-0923-4809-8C8B-4BA34217C3BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{64AF1B98-696F-4F85-AC92-43F672A06DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64AF1B98-696F-4F85-AC92-43F672A06DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64AF1B98-696F-4F85-AC92-43F672A06DAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38758480-5F52-464F-A6E4-4FA1C7DCE137}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38758480-5F52-464F-A6E4-4FA1C7DCE137}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38758480-5F52-464F-A6E4-4FA1C7DCE137}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38758480-5F52-464F-A6E4-4FA1C7DCE137}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79640D24-0923-4809-8C8B-4BA34217C3BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79640D24-0923-4809-8C8B-4BA34217C3BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79640D24-0923-4809-8C8B-4BA34217C3BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79640D24-0923-4809-8C8B-4BA34217C3BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

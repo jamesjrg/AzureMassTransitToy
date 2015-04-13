@@ -4,4 +4,12 @@
     <Instances count="1" />
     <ConfigurationSettings />
   </Role>
+  <Role name="ConsumerA">
+    <Instances count="1" />
+    <ConfigurationSettings />
+  </Role>
+  <Role name="ConsumerB">
+    <Instances count="1" />
+    <ConfigurationSettings />
+  </Role>
 </ServiceConfiguration>

@@ -37,6 +37,22 @@
     <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ConsumerA\ConsumerA.fsproj">
+      <Name>ConsumerA</Name>
+      <Project>{38758480-5f52-464f-a6e4-4fa1c7dce137}</Project>
+      <Private>True</Private>
+      <RoleType>Worker</RoleType>
+      <RoleName>ConsumerA</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
+    <ProjectReference Include="..\ConsumerB\ConsumerB.fsproj">
+      <Name>ConsumerB</Name>
+      <Project>{79640d24-0923-4809-8c8b-4ba34217c3be}</Project>
+      <Private>True</Private>
+      <RoleType>Worker</RoleType>
+      <RoleName>ConsumerB</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
     <ProjectReference Include="..\Producer\Producer.fsproj">
       <Name>Producer</Name>
       <Project>{64af1b98-696f-4f85-ac92-43f672a06dad}</Project>
@@ -47,9 +63,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ConsumerAContent\" />
+    <Folder Include="ConsumerBContent\" />
     <Folder Include="ProducerContent\" />
   </ItemGroup>
   <ItemGroup>
+    <DiagnosticsConfiguration Include="ConsumerAContent\diagnostics.wadcfgx" />
+    <DiagnosticsConfiguration Include="ConsumerBContent\diagnostics.wadcfgx" />
     <DiagnosticsConfiguration Include="ProducerContent\diagnostics.wadcfgx" />
   </ItemGroup>
   <!-- Import the target files for this project template -->
