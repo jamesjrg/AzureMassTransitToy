@@ -1,2 +1,3 @@
 WindowsAzure.Storage
 MassTransit.AzureServiceBus
+Microsoft.ApplicationInsights.RuntimeTelemetry

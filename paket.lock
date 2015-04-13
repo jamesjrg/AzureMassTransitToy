@@ -10,12 +10,25 @@ NUGET
       NewId (>= 2.1.2)
       Newtonsoft.Json (>= 6.0.8)
       WindowsAzure.ServiceBus (>= 2.6.1)
+    Microsoft.ApplicationInsights (0.14.0-build20632) - framework: portable-win81+wpa81, >= net40, >= net45
+      Microsoft.Bcl.Async (>= 1.0.168) - framework: wpv8.0, >= net40
+      Microsoft.Diagnostics.Tracing.EventSource.Redist (1.1.16-beta)
+    Microsoft.ApplicationInsights.Agent.Intercept (0.14.0-build08008) - framework: >= net40, >= net45
+    Microsoft.ApplicationInsights.RuntimeTelemetry (0.14.0-build20632)
+      Microsoft.ApplicationInsights (>= 0.14.0-build20632) - framework: portable-win81+wpa81, >= net40, >= net45
+      Microsoft.ApplicationInsights.Agent.Intercept (>= 0.14.0-build08008) - framework: >= net40, >= net45
+    Microsoft.Bcl (1.1.10)
+      Microsoft.Bcl.Build (>= 1.0.14)
+    Microsoft.Bcl.Async (1.0.168) - framework: wpv8.0, >= net40
+      Microsoft.Bcl (>= 1.1.8)
+    Microsoft.Bcl.Build (1.0.21)
     Microsoft.Data.Edm (5.6.4)
     Microsoft.Data.OData (5.6.4)
       Microsoft.Data.Edm (5.6.4)
       System.Spatial (5.6.4)
     Microsoft.Data.Services.Client (5.6.4) - framework: >= net40
       Microsoft.Data.OData (5.6.4)
+    Microsoft.Diagnostics.Tracing.EventSource.Redist (1.1.16-beta)
     Microsoft.WindowsAzure.ConfigurationManager (3.1.0)
     NewId (2.1.2)
     Newtonsoft.Json (6.0.8)

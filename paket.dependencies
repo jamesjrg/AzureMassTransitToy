@@ -2,3 +2,4 @@ source https://www.nuget.org/api/v2
 
 nuget WindowsAzure.Storage 4.3.0
 nuget MassTransit.AzureServiceBus 3.0.3-alpha
+nuget Microsoft.ApplicationInsights.RuntimeTelemetry 0.14.0-build20632
