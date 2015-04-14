@@ -34,62 +34,6 @@
     <DocumentationFile>bin\Release\ConsumerA.XML</DocumentationFile>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\FSharp\Microsoft.FSharp.Targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\FSharp\Microsoft.FSharp.Targets')" />
-  <ItemGroup>
-    <Content Include="ApplicationInsights.config.install.xdt">
-      <Paket>True</Paket>
-    </Content>
-    <Content Include="ApplicationInsights.config.uninstall.xdt">
-      <Paket>True</Paket>
-    </Content>
-    <Content Include="native\ApplicationInsights.config.install.xdt">
-      <Paket>True</Paket>
-    </Content>
-    <Content Include="native\ApplicationInsights.config.uninstall.xdt">
-      <Paket>True</Paket>
-    </Content>
-    <Content Include="net40\ApplicationInsights.config.install.xdt">
-      <Paket>True</Paket>
-    </Content>
-    <Content Include="net40\ApplicationInsights.config.uninstall.xdt">
-      <Paket>True</Paket>
-    </Content>
-    <Content Include="net45\ApplicationInsights.config.install.xdt">
-      <Paket>True</Paket>
-    </Content>
-    <Content Include="net45\ApplicationInsights.config.uninstall.xdt">
-      <Paket>True</Paket>
-    </Content>
-    <Content Include="portable-win81+wpa81\ApplicationInsights.config.install.xdt">
-      <Paket>True</Paket>
-    </Content>
-    <Content Include="portable-win81+wpa81\ApplicationInsights.config.uninstall.xdt">
-      <Paket>True</Paket>
-    </Content>
-    <Content Include="app.config.install.xdt">
-      <Paket>True</Paket>
-    </Content>
-    <Content Include="web.config.install.xdt">
-      <Paket>True</Paket>
-    </Content>
-    <Compile Include="WorkerRole.fs" />
-    <None Include="app.config" />
-    <None Include="paket.references" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="mscorlib" />
-    <Reference Include="FSharp.Core">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=2.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=2.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <Private>true</Private>
-    </Reference>
-    <Reference Include="System.ServiceModel" />
-    <Reference Include="System.ServiceModel.Discovery" />
-  </ItemGroup>
   <Choose>
     <When Condition="($(TargetFrameworkIdentifier) == '.NETFramework' And ($(TargetFrameworkVersion) == 'v4.5' Or $(TargetFrameworkVersion) == 'v4.5.1' Or $(TargetFrameworkVersion) == 'v4.5.2' Or $(TargetFrameworkVersion) == 'v4.5.3' Or $(TargetFrameworkVersion) == 'v4.6')) Or ($(TargetFrameworkIdentifier) == 'MonoAndroid') Or ($(TargetFrameworkIdentifier) == 'MonoTouch')">
       <ItemGroup>
@@ -832,4 +776,25 @@
       </ItemGroup>
     </When>
   </Choose>
+  <ItemGroup>
+    <None Include="paket.references" />
+    <None Include="app.config" />
+    <Content Include="ApplicationInsights.config" />
+    <Compile Include="WorkerRole.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="FSharp.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=2.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=2.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Discovery" />
+  </ItemGroup>
 </Project>
