@@ -11,6 +11,12 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ConsumerA", "ConsumerA\Cons
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ConsumerB", "ConsumerB\ConsumerB.fsproj", "{79640D24-0923-4809-8C8B-4BA34217C3BE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{849896FE-F433-4996-96D2-B6376FF1E18E}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+		paket.lock = paket.lock
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
